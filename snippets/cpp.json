@@ -1,0 +1,15 @@
+{
+  "Codeforces Boilerplate": {
+    "prefix": "cdf",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "int main() {",
+      "   ios_base::sync_with_stdio(false);",
+      "   cin.tie(nullptr);",
+      "",
+      "}"
+    ],
+    "description": "Base codeforces"
+  }
+}
