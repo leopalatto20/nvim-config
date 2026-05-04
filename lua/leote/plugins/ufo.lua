@@ -1,9 +1,7 @@
-require("ufo").setup({
-    provider_selector = function(_, _, _)
-        return { "treesitter", "indent" }
-    end,
-    open_fold_hl_timeout = 0,
-})
+require('ufo').setup {
+  provider_selector = function(_, _, _) return { 'treesitter', 'indent' } end,
+  open_fold_hl_timeout = 0,
+}
 
 vim.o.foldenable = true
 vim.o.foldcolumn = '0' -- '0' is not bad

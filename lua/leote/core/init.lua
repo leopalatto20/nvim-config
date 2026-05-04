@@ -1,2 +1,2 @@
-require('leote.core.options')
-require('leote.core.keymaps')
+require 'leote.core.options'
+require 'leote.core.keymaps'
