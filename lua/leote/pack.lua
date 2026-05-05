@@ -41,6 +41,7 @@ vim.pack.add {
   { src = 'https://github.com/AvengeMedia/base46' },
   { src = 'https://github.com/HiPhish/rainbow-delimiters.nvim' },
   { src = 'https://github.com/kdheepak/lazygit.nvim' },
+  { src = 'https://github.com/supermaven-inc/supermaven-nvim' },
 }
 
 require 'leote.plugins.fff'
@@ -59,3 +60,4 @@ require 'leote.plugins.conform'
 require 'leote.plugins.java'
 require 'leote.plugins.blink'
 require 'leote.plugins.lazygit'
+require 'leote.plugins.supermaven'
