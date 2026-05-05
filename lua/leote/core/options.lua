@@ -1,8 +1,11 @@
 vim.opt.termguicolors = true
 -- line numbers
 vim.opt.nu = true
+vim.opt.cursorline = true
 vim.opt.relativenumber = true
 
+vim.opt.guicursor =
+  'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175'
 -- indentation
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -35,7 +38,6 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- misc
-vim.opt.guicursor = ''
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = '0'
 vim.opt.clipboard:append 'unnamedplus'
