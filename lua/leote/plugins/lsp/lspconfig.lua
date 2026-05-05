@@ -50,7 +50,7 @@ vim.diagnostic.config {
   signs = { text = signs },
   virtual_text = true,
   underline = true, -- Always on
-  update_in_insert = true,
+  update_in_insert = false,
   float = {
     focusable = false,
     style = 'minimal',
@@ -65,9 +65,7 @@ vim.keymap.set('n', '<leader>lx', function()
   vim.diagnostic.config { virtual_text = not current }
 end, { desc = 'Toggle LSP virtual text' })
 
--- NOTE: Setup servers
-local cmp_nvim_lsp = require 'cmp_nvim_lsp'
-local capabilities = cmp_nvim_lsp.default_capabilities()
+local capabilities = require('blink.cmp').get_lsp_capabilities()
 
 -- Native LSP capabilities (if dropping cmp_nvim_lsp)
 -- local capabilities = vim.lsp.protocol.make_client_capabilities()

@@ -28,5 +28,6 @@ mason_tool_installer.setup {
     'biome',
     'prettier',
     'stylua',
+    'google-java-format',
   },
 }

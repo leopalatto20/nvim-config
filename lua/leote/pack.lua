@@ -17,24 +17,30 @@ vim.pack.add {
   { src = 'https://github.com/numToStr/Comment.nvim' },
 
   -- completions cmp
-  { src = 'https://github.com/hrsh7th/nvim-cmp' }, --enabled
+  { src = 'https://github.com/saghen/blink.lib' },
+  { src = 'https://github.com/saghen/blink.cmp' },
   -- completions dependency
-  { src = 'https://github.com/hrsh7th/cmp-nvim-lsp' },
   { src = 'https://github.com/stevearc/conform.nvim' },
-  { src = 'https://github.com/hrsh7th/cmp-buffer' },
-  { src = 'https://github.com/hrsh7th/cmp-path' },
-  { src = 'https://github.com/hrsh7th/cmp-cmdline' },
-  { src = 'https://github.com/f3fora/cmp-spell' },
   { src = 'https://github.com/L3MON4D3/LuaSnip', version = 'v2.4.1' },
-  { src = 'https://github.com/saadparwaiz1/cmp_luasnip' },
   { src = 'https://github.com/rafamadriz/friendly-snippets' },
-  { src = 'https://github.com/onsails/lspkind.nvim' },
 
   -- LSP stack
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   { src = 'https://github.com/mason-org/mason.nvim' },
   { src = 'https://github.com/mason-org/mason-lspconfig.nvim' },
   { src = 'https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim' },
+  {
+    src = 'https://github.com/JavaHello/spring-boot.nvim',
+    version = '218c0c26c14d99feca778e4d13f5ec3e8b1b60f0',
+  },
+  { src = 'https://github.com/MunifTanjim/nui.nvim' },
+  { src = 'https://github.com/mfussenegger/nvim-dap' },
+
+  { src = 'https://github.com/nvim-java/nvim-java' },
+
+  { src = 'https://github.com/AvengeMedia/base46' },
+  { src = 'https://github.com/HiPhish/rainbow-delimiters.nvim' },
+  { src = 'https://github.com/kdheepak/lazygit.nvim' },
 }
 
 require 'leote.plugins.fff'
@@ -47,7 +53,9 @@ require 'leote.plugins.ufo'
 require 'leote.plugins.gitsigns'
 require 'leote.plugins.guess-indent'
 require 'leote.plugins.mini'
-require 'leote.plugins.nvim-cmp'
 require 'leote.plugins.lsp.mason' -- mason has to load before lspconfig
 require 'leote.plugins.lsp.lspconfig'
 require 'leote.plugins.conform'
+require 'leote.plugins.java'
+require 'leote.plugins.blink'
+require 'leote.plugins.lazygit'

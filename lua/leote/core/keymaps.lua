@@ -22,6 +22,7 @@ vim.keymap.set('n', '<leader>Y', [["+Y]], opts)
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 
 vim.keymap.set('n', '<leader>u', function() vim.cmd.UndotreeToggle() end, { desc = 'Toggle Undo Tree' })
+vim.keymap.set('n', '<leader>c', ':nohl<CR>', { desc = 'Clear search hl', silent = true })
 
 vim.keymap.set('n', '<leader>sv', '<C-w>v', { desc = 'Split window vertically' })
 vim.keymap.set('n', '<leader>sh', '<C-w>s', { desc = 'Split window horizontally' })
